@@ -28,7 +28,7 @@ public class Server {
     private HttpContext context;
 
     public Server(String ip, int port) throws Exception{
-        if(ip.equals(null) || port < 0)
+        if(ip == null || port < 0)
             throw new IllegalArgumentException("Unable to start server: invalid arguments! " + ip + " " + port);
         this.portToListen = port;
         try {
