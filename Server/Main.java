@@ -22,8 +22,8 @@ public class Main {
         testLeague.addMember("Franco");
         testLeague.addMember("Nando");
         testLeague.addMember("Marcello");
-
-
+        System.out.println(testLeague.tryNewTransaction("Marco",120,"Koulibaly", "D"));
+        System.out.println(testLeague.tryNewTransaction("Gianni",120,"Koulibaly","D"));
 
 
     }

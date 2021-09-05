@@ -2,16 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725d5669-3fb9-4ec8-bc77-aea6a2eb0890" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/LeagueObjs/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/League.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Members.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Transactions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/LeagueObjs/League.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/LeagueObjs/League.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Members$Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Members$Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Members.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Members.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Team$Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/LeagueObjs/Transaction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/Server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fantAdmin/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fantAdmin/Server/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
