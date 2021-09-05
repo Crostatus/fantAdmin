@@ -5,6 +5,7 @@ import Testing.Utilities;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Enumeration;
+import java.util.Vector;
 import java.util.logging.ConsoleHandler;
 
 public class Members {
@@ -15,6 +16,16 @@ public class Members {
     public Members(){
         group = new ArrayList<Member>(10);
     }
+
+    public String addNewPlayer(String memberName, Player player){
+        for(Member m : group)
+            if(m.name.equals(memberName)) {
+                m.playerTeam.addPlayer(player);
+                break;
+            }
+        return "OK";
+    }
+
 
     public synchronized void addMember(String memberName, int startingBalance){
         if(Utilities.isNullOrEmpty(memberName) || startingBalance < 30){
@@ -27,7 +38,7 @@ public class Members {
                 System.out.println("[ERRORE] Utente " + memberName + " già registrato nella competizione!");
                 return;
             }
-        group.add(new Member(memberName, startingBalance));
+        group.add(new Member(memberName));
     }
 
     public static void setStartingBalance(int balance){
@@ -35,20 +46,31 @@ public class Members {
             st_bal = balance;
     }
 
+    public Vector<Team> shareTeams(){
+        Vector<Team> tmp = new Vector<>(10);
+        for(Member m : group){
+            tmp.add(m.getTeam());
+        }
+        return tmp;
+    }
 
     private class Member {
 
         private String name;
         private int balance;
+        private Team playerTeam;
 
-        public Member(String memberName, int startingBalance){
+        public Member(String memberName){
             if(Utilities.isNullOrEmpty(memberName))
                 throw new IllegalArgumentException("Pretty bad error: invalid member name");
-            if(startingBalance < 30)
-                throw new IllegalArgumentException("Pretty bad error: invalid starting balance");
 
             this.name = memberName;
-            this.balance = startingBalance;
+            this.balance = st_bal;
+            this.playerTeam = new Team(this.name);
+        }
+
+        public Team getTeam(){
+            return this.playerTeam;
         }
 
     }

@@ -16,74 +16,65 @@ public class Team {
     private ArrayList<Player> midfielders;
     private ArrayList<Player> strikers;
 
-    private String teamName;
+    private String teamOwner;
 
-    public Team(String teamName){
-        if(Utilities.isNullOrEmpty(teamName))
+    public Team(String teamOwner){
+        if(Utilities.isNullOrEmpty(teamOwner))
             return;
 
-        this.teamName = teamName;
+        this.teamOwner = teamOwner;
         goalKeepers = new ArrayList<Player>(gk);
         defenders = new ArrayList<Player>(def);
         midfielders = new ArrayList<Player>(mid);
         strikers = new ArrayList<Player>(strk);
 
-        System.out.println("Squadra " + teamName + "creata correttamente!");
+        System.out.println("Squadra di " + teamOwner + " creata correttamente!");
     }
 
-    public synchronized void addPlayer(String playerName, String playerRole){
-        if(Utilities.isNullOrEmpty(playerName, playerRole))
+    public String getTeamOwner(){
+        return this.getTeamOwner();
+    }
+
+
+    public synchronized void addPlayer(Player newPlayer){
+        if(Utilities.isNullOrEmpty(newPlayer.name, newPlayer.role))
             return;
 
-        switch (playerRole){
+        switch (newPlayer.role){
             case "GK":
                 if(goalKeepers.size() < gk){
-                    goalKeepers.add(new Player(playerName, playerRole));
+                    goalKeepers.add(newPlayer);
                 } else {
                     System.out.println("Already full of goal keepers!");
                 }
                 break;
             case "D":
                 if(defenders.size() < def){
-                    defenders.add(new Player(playerName, playerRole));
+                    defenders.add(newPlayer);
                 } else {
                     System.out.println("Already full of defenders!");
                 }
                 break;
             case "C":
                 if(midfielders.size() < mid){
-                    midfielders.add(new Player(playerName, playerRole));
+                    midfielders.add(newPlayer);
                 } else {
                     System.out.println("Already full of midfielders!");
                 }
                 break;
             case "A":
                 if(strikers.size() < strk){
-                    strikers.add(new Player(playerName, playerRole));
+                    strikers.add(newPlayer);
                 } else {
                     System.out.println("Already full of strikers!");
                 }
                 break;
             default:
-                System.out.println("Invalid player role: " + playerRole);
+                System.out.println("Invalid player role: " + newPlayer.role);
                 break;
         }
     }
 
-
-
-
-    private class Player{
-
-        public String name;
-        public String role;
-
-        public Player(String name, String role){
-            this.name = name;
-            this.role = role;
-        }
-
-    }
 
 
 }
