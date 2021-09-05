@@ -5,10 +5,14 @@
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Testing/Utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.java" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/League.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Members.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/LeagueObjs/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/LeagueObjs/Transaction.java" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
