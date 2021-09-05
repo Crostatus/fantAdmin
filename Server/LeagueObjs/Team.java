@@ -1,4 +1,6 @@
-package LeagueObjs;
+package Server.LeagueObjs;
+
+import Testing.Utilities;
 
 import java.util.ArrayList;
 
@@ -17,7 +19,7 @@ public class Team {
     private String teamName;
 
     public Team(String teamName){
-        if(League.isEmptyOrNull(teamName))
+        if(Utilities.isNullOrEmpty(teamName))
             return;
 
         this.teamName = teamName;
@@ -30,7 +32,7 @@ public class Team {
     }
 
     public synchronized void addPlayer(String playerName, String playerRole){
-        if(League.isEmptyOrNull(playerName) || League.isEmptyOrNull(playerRole))
+        if(Utilities.isNullOrEmpty(playerName, playerRole))
             return;
 
         switch (playerRole){

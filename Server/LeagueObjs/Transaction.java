@@ -1,4 +1,6 @@
-package LeagueObjs;
+package Server.LeagueObjs;
+
+import Testing.Utilities;
 
 import java.util.Date;
 
@@ -22,11 +24,11 @@ public class Transaction {
     }
 
     private Boolean checkTransactions(String buyer, int amount, String playerName, String role){
-        Boolean validBuyer = !(buyer.equals(null) || buyer.equals(""));
         Boolean validAmount = amount > 0;
-        Boolean validPlayerName = !(playerName.equals(null) || playerName.equals(""));
+        Boolean validNames = !Utilities.isNullOrEmpty(buyer, playerName);
         Boolean validRole = role.equals("A") || role.equals("C") || role.equals("D") || role.equals("P");
-        return validBuyer && validAmount && validPlayerName && validRole;
+
+        return validAmount && validNames && validRole;
     }
 
 }
